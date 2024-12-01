@@ -14,7 +14,7 @@ final = zip(sorted(col1), sorted(col2))
 final_ans = 0
 
 for x, y in final:
-    final_ans += x * y
+    final_ans += abs(x - y)
 
 
 print(final_ans)
