@@ -9,12 +9,10 @@ for line in lines:
     col1.append(int(line[0]))
     col2.append(int(line[1]))
 
-final = zip(sorted(col1), sorted(col2))
-
 final_ans = 0
 
-for x, y in final:
-    final_ans += abs(x - y)
+for x in col1:
+    final_ans += x * col2.count(x)
 
 
 print(final_ans)
